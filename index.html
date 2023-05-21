@@ -1,18 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./position rel.css">
+    <title> My portfolio</title>
+    <link rel="icon"
+        href="data:image/png;base64,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"
+        type="image/gif" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./pr.css">
+    <script src="https://kit.fontawesome.com/79e8746ea8.js" crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
-    <h1>heading</h1>
-    <div class="parent">
-        <div class="child">
+    <header>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 43, 204)">
+                <div class="container ">
+                    <div class="col-md-6 ">
+                        <a class="navbar-brand ps-2" href="#">Rakesh N</a>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+
+                            <ul class="navbar-nav mx-auto me-3">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#about">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#skill">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#project">Project</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link text-white">Contact</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <section class="p-3" id="about">
+        <div class="container">
+            <h1 class="text-center">About Me</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid"
+                        src="https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg"
+                        alt="full stack developer">
+                </div>
+                <div class="col-md-6 my-auto ali">
+                    <p>I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an
+                        excellent team worker and am keen and very willing to learn and develop new skills. I am
+                        reliable and dependable and often seek new responsibilities within a wide range of employment
+                        areas.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="p-3" id="skill">
+        <div class="container">
+            <h1 class="text-center p-2">Skills</h1>
+            <div class="row ">
+                <div class="col-md-2 p-2">
+                    <h5 class="text-center">Html</h5>
+                </div>
+                <div class="col-md-10 p-2">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-danger" style="width:80%">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-2 p-2">
+                    <h5 class="text-center">CSS</h5>
+                </div>
+                <div class="col-md-10 p-2">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-dark" style="width:90%">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-2 p-2">
+                    <h5 class="text-center">Bootstrap</h5>
+                </div>
+                <div class="col-md-10 p-2">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-warning" style="width:90%">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-2 p-2">
+                    <h5 class="text-center">javascript</h5>
+                </div>
+                <div class="col-md-10 p-2">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info" style="width:85%">85%</div>
+                    </div>
+                </div>
+                <div class="col-md-2 p-2">
+                    <h5 class="text-center">C++</h5>
+                </div>
+                <div class="col-md-10 p-2">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped  bg-success" style="width:85%">85%</div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-    </div>
+    </section>
+    <section class="p-3" id="project">
+        <div class="container">
+            <h1 class="text-center p-2">My Projects</h1>
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width:370px">
+                        <img class="card-img-top" style="height:200px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz43xtdf4qPO-jmilMSwmZOU4814F6_sgoOQ&usqp=CAU"
+                            alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 1</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">view project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width:370px">
+                        <img class="card-img-top" style="height:200px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoU0AWIDct9AkximUWMSeHnKQW3PhgdFRXg&usqp=CAU"
+                            alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 2</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">view project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width:370px">
+                        <img class="card-img-top" style="height:200px;"
+                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZHW9N1Im--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/y90d0mmoao3f3r5ooo46.jpg"
+                            alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 3</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">view project</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="p-3 bg-secondary" id="contact">
+        <div class="container">
+            <h1 class="text-center p-2">Contact Me</h1>
+            <div class="text-center">
+                <p> <span><i class="fa-solid fa-house"></i></span> Pathanamthitta, Kerala, India</p>
+                <p><span><i class="fa-solid fa-phone"></i></span> +919400075933</p>
+                <p><span><i class="fa-solid fa-envelope"></i></span> rakeshnanda93@gmail.com</p>
+                <a href="#"><i class="fa-brands fa-facebook text-light p-1"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-light p-1"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin text-light p-1"></i></a>
+            </div>
+        </div>
+
+    </section>
+
 </body>
+
 </html>
